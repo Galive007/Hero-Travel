@@ -116,6 +116,7 @@
     border: none;
 }
 .btn{
+    cursor: pointer;
     border: none;
     padding: 16px 34px;
     display: flex;
@@ -162,7 +163,8 @@
     }   
     /* banner section */
     .banner {
-        padding: 16px 0;
+        padding: 26px 0;
+        object-fit: cover;
     }
     .banner-input {
         padding: 16px;
@@ -170,7 +172,7 @@
         flex-direction: column;
     }
     .banner-content h1 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
     .banner-content>p {
         padding: 10px 0 16px;
