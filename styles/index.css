@@ -7,6 +7,29 @@
 /* font-details */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
 /* font-family: 'Mulish', sans-serif; */
-h1{
-    color: red;
+
+/* header section */
+.nav-container{
+    margin: 0 auto;
+    max-width: 85%;
+    padding: 52px 0;
+    border: 2px solid red;
+}
+.nav-logo{
+    display: flex;
+    max-width: 50%;
+    border: 1px solid green;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo img{
+    max-width: 100%;
+}
+.nav-logo .logo-text{
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+.nav-logo .logo-text .logo-color{
+    color: #FF5400;
 }
