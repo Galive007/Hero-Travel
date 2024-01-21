@@ -106,7 +106,7 @@
     align-items: flex-start;
     gap: 24px;
 }
-.banner-input input , #types{
+.banner-input input, #when , #types{
     padding: 16px 20px;
     color: var(--banner-input-color);
     font-size: 1rem;
@@ -175,7 +175,7 @@
     .banner-content>p {
         padding: 10px 0 16px;
     }
-    .banner-input input, #types ,.btn{
+    .banner-input input, #when, #types ,.btn{
         width: 100%;
     }
 
@@ -207,7 +207,7 @@
     .banner-content>p {
         padding: 10px 0 16px;
     }
-    .banner-input input, #types ,.btn{
+    .banner-input input, #when, #types ,.btn{
         width: 100%;
     }
 }
