@@ -1,3 +1,14 @@
+/* font-details */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
+/* font-family: 'Mulish', sans-serif; */
+
+/* variables style */
+:root{
+    --primary-color: #FF5400;
+    --heading-color:#131318;
+    --paragraphs-color: rgba(19, 19, 24, 0.70);
+    --banner-input-color: rgba(19, 19, 24, 0.50);
+}
 /* common style */
 *{
     margin: 0;
@@ -5,22 +16,14 @@
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
-/* variables style */
-:root{
-    --primary-color: #FF5400;
-    --heading-color:#131318;
-    --paragraphs-color: rgba(19, 19, 24, 0.70);
-}
-/* font-details */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
-/* font-family: 'Mulish', sans-serif; */
+
 
 /* header section */
 .nav-container{
     display: flex;
     margin: 0 auto;
     max-width: 1180px;
-    padding: 52px 0;
+    padding: 50px 0;
     align-items: center;
 }
 .nav-logo{
@@ -61,6 +64,8 @@
 }
 /* banner section */
 .banner{
+    text-align: center;
+    padding: 106px 0;
     margin: 0 auto;
     max-width: 1175px;
     background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
@@ -69,6 +74,62 @@
     height: 500px;
     border-radius: 16px; 
 }
+.banner-content{
+    /* border: 1px solid yellow; */
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-content h1{
+    color: #FFF;
+    font-size: 3.8em;
+    font-weight: 800;
+}
+.banner-content>p{
+    padding: 24px 0 48px;
+    max-width: 670px;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.banner-input{
+    /* margin: 0 auto;
+    width: 768px; */
+    
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    /* border: 1px solid sandybrown; */
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+}
+.banner-input input , #types{
+    padding: 16px 20px;
+    color: var(--banner-input-color);
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+.btn{
+    border: none;
+    padding: 16px 34px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    gap: 10px;
+}
+
+
 
 
 
