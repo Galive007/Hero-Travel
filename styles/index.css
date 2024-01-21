@@ -1,8 +1,14 @@
+/* common style */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
+}
+/* variables style */
+:root{
+    --primary-color: #FF5400;
+    --paragraphs-color: rgba(19, 19, 24, 0.70);
 }
 /* font-details */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
@@ -10,26 +16,77 @@
 
 /* header section */
 .nav-container{
+    display: flex;
     margin: 0 auto;
-    max-width: 85%;
+    max-width: 1180px;
     padding: 52px 0;
-    border: 2px solid red;
+    align-items: center;
 }
 .nav-logo{
     display: flex;
-    max-width: 50%;
-    border: 1px solid green;
+    width: 50%;
     align-items: center;
     gap: 10px;
 }
 .nav-logo img{
     max-width: 100%;
+    object-fit: cover;
 }
 .nav-logo .logo-text{
     color: #131318;
-    font-size: 36px;
+    font-size: 2em;
     font-weight: 800;
 }
 .nav-logo .logo-text .logo-color{
-    color: #FF5400;
+    color: var(--primary-color);
+}
+.scroll-icon{
+    display: none;
+}
+.nav-menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: #424247;
+    font-size: 1rem;
+}
+.nav-menu a:hover{
+    color: var(--primary-color);
+    font-weight: 700;
+    transition: .1s;
+}
+
+
+/* responsive style */
+@media only screen and (max-width:570px) {
+    .nav-container {
+        padding: 20px 20px;
+    }  
+    .nav-logo img {
+        width: 20%;
+        object-fit: cover;
+    }
+    .nav-logo .logo-text {
+    font-size: 1.2em;
+    }
+    .scroll-icon {
+        position: relative;
+        display: flex;
+        left: 130px;
+    }
+    .nav-menu {
+        display: none;
+        
+    }   
+}
+@media screen and (min-width:570.1px) and (max-width:992px) {
+    .nav-container {
+        padding: 35px 50px;
+    }
+    .nav-logo{
+        justify-content: left;
+    }
 }
