@@ -8,6 +8,7 @@
 /* variables style */
 :root{
     --primary-color: #FF5400;
+    --heading-color:#131318;
     --paragraphs-color: rgba(19, 19, 24, 0.70);
 }
 /* font-details */
@@ -33,7 +34,7 @@
     object-fit: cover;
 }
 .nav-logo .logo-text{
-    color: #131318;
+    color: var(--heading-color);
     font-size: 2em;
     font-weight: 800;
 }
@@ -58,6 +59,23 @@
     font-weight: 700;
     transition: .1s;
 }
+/* banner section */
+.banner{
+    margin: 0 auto;
+    max-width: 1175px;
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    border-radius: 16px; 
+}
+
+
+
+
+
+
+
 
 
 /* responsive style */
