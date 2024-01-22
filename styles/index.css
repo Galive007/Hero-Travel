@@ -17,7 +17,7 @@
     font-family: 'Mulish', sans-serif;
 }
 /* common section padding */
-header,.popular-container{
+header, .popular-container, .destination{
     padding-bottom: 100px;
 }
 /* common section width */
@@ -181,22 +181,33 @@ main{
 }
 .popular-content ul{
     padding-left: 25px;
+    
 }
 .popular-content ul li{
-    padding-top: 10px;
+    /* padding: 10px 20px; */
+    padding-right: 66px;
+    padding-bottom: 16px;
 }
-.popular-content a{
-    margin-top: 50px;
+.popular-content>button{
+    margin-top: 10px;
 }
-.popular-image{
-    width: 100%;
-}
+
 .popular-content p{
     padding: 18px 0 25px;
 }
-
-
-
+/* destination section */
+.destination{
+    /* border: 1px solid red; */
+}
+.destination-content{
+    /* border: 1px solid darkmagenta; */
+    width: 55.3%;
+    margin: 0 auto;
+    text-align: center;
+}
+.destination-content>p{
+    margin: 24px 0 45px;
+}
 
 
 
@@ -204,6 +215,10 @@ main{
 
 /* responsive style */
 @media only screen and (max-width:570px) {
+    header, .popular-container {
+        padding-bottom: 24px;
+    }
+    
     .nav-container {
         padding: 20px 20px;
     }  
@@ -225,6 +240,7 @@ main{
     }   
     /* banner section */
     .banner {
+        margin: 0 20px;
         padding: 26px 0;
         object-fit: cover;
     }
@@ -242,12 +258,28 @@ main{
     .banner-input input, #when, #types ,.btn{
         width: 100%;
     }
+    /* popular section */
+    .popular-container {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .section-primary-tittle {
+        font-size: 1.4em;
+    }
+    .popular-image img{
+        width: 100%;
+    }
 
 }
 
 
 
 @media screen and (min-width:570.1px) and (max-width:992px) {
+    /* common style */
+    header, .popular-container {
+        padding-bottom: 35px;
+    }
+
     /* nav section */
     .nav-container {
         padding: 35px 50px;
@@ -274,4 +306,17 @@ main{
     .banner-input input, #when, #types ,.btn{
         width: 100%;
     }
+    /* popular section */
+    .popular-container {
+        /* align-items: center; */
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .section-primary-tittle {
+        font-size: 2em;
+    }
+    .popular-image img{
+        width: 100%;
+    }
+
 }
