@@ -208,6 +208,24 @@ main{
 .destination-content>p{
     margin: 24px 0 45px;
 }
+.row{
+    display: flex;
+    gap: 20px;
+}
+.image-tittle img{
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.image-tittle h3{
+    position: relative;
+    top: -180px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    object-fit: cover;
+    image-resolution: 100%;
+}
 
 
 
@@ -215,7 +233,7 @@ main{
 
 /* responsive style */
 @media only screen and (max-width:570px) {
-    header, .popular-container {
+    header, .popular-container ,.destination {
         padding-bottom: 24px;
     }
     
@@ -235,8 +253,7 @@ main{
         left: 130px;
     }
     .nav-menu {
-        display: none;
-        
+        display: none;  
     }   
     /* banner section */
     .banner {
@@ -269,14 +286,33 @@ main{
     .popular-image img{
         width: 100%;
     }
-
+    /* destination section */
+    .destination-content {
+        width: 75%;
+    }
+    .destination-content>p {
+        margin: 20px 0 25px;
+    }
+    .row{
+        flex-direction: column;
+        gap: 0;
+        padding: 0 20px;
+    }
+    .image-tittle img{
+        width: 100%;
+        height: 210px;
+    }
+    .image-tittle h3{
+        top: -116px;
+        font-size: 1.4rem;
+    }
 }
 
 
 
 @media screen and (min-width:570.1px) and (max-width:992px) {
     /* common style */
-    header, .popular-container {
+    header, .popular-container, .destination {
         padding-bottom: 35px;
     }
 
@@ -315,8 +351,31 @@ main{
     .section-primary-tittle {
         font-size: 2em;
     }
+    .popular-image{
+        width: 90%;
+        margin: 0 auto;
+    }
     .popular-image img{
         width: 100%;
     }
-
+    /* destination section */
+    .destination-content {
+        width: 75%;
+    }
+    .destination-content>p {
+        margin: 20px 0 25px;
+    }
+    .row{
+        flex-direction: column;
+        gap: 0;
+        padding: 0 20px;
+    }
+    .image-tittle img{
+        height: 210px;
+        width: 100%;
+    }
+    .image-tittle h3{
+        top: -165px;
+        font-size: 1.4rem;
+    }
 }
