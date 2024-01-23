@@ -18,7 +18,7 @@
     font-family: 'Mulish', sans-serif;
 }
 /* common section padding */
-header, .popular-container, .destination , .whychoose{
+header, .popular-container, .destination , .whychoose , .deal{
     padding-bottom: 100px;
 }
 /* common section width */
@@ -34,7 +34,7 @@ main{
 }
 /* common paragraphs */
 .primary-p{
-    color: rgba(19, 19, 24, 0.70);
+    color: var(--paragraphs-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
@@ -164,7 +164,7 @@ main{
     display: flex;
     align-items: center;
     border-radius: 8px;
-    background: #FF5400;
+    background: var(--primary-color);
     color: #FFF;
     font-size: 1rem;
     font-weight: 700;
@@ -200,7 +200,7 @@ main{
 .destination{
     /* border: 1px solid red; */
 }
-.destination-content, .whychoose-content{
+.destination-content, .whychoose-content , .deal-content{
     /* border: 1px solid darkmagenta; */
     width: 55.3%;
     margin: 0 auto;
@@ -251,7 +251,7 @@ main{
     font-weight: 800;
 }
 .card-p{
-    color: #5A5A5D;
+    color: var(--card-paragraph-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px; /* 162.5% */
@@ -272,12 +272,59 @@ main{
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* deal section */
+.deal{
+    /* border: 1px solid gold; */
+}
+.tourpackage-container{
+    margin: 48px 0 0;
+}
+.tourpackage{
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 500px;
+    border-radius: 16px;
+    background: url('../Images/Group\ 39.png'), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.t-p-l{
+    flex-direction: row;
+}
+.t-p-l>.tour-details{
+    margin-left: 56px;
+}
+.tour-details{
+    width: 579px;
+    height: 389px;
+    margin-right: 56px;
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+.details{
+    display: flex;
+    gap: 24px;
+}
+
+.tour-price{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 16px 0 24px;
+}
 
 
 
 /* responsive style */
 @media only screen and (max-width:570px) {
-    header, .popular-container , .destination, .whychoose {
+    header, .popular-container , .destination, .whychoose , .deal{
         padding-bottom: 24px;
     }
     
@@ -316,7 +363,7 @@ main{
     .banner-content>p {
         padding: 10px 0 16px;
     }
-    .banner-input input, #when, #types ,.btn{
+    .banner-input input, #when, #types , .btn{
         width: 100%;
     }
     /* popular section */
@@ -331,8 +378,8 @@ main{
         width: 100%;
     }
     /* destination section */
-    .destination-content ,.whychoose-content{
-        width: 90%;
+    .destination-content ,.whychoose-content , .deal-content{
+        width: 80%;
     }
     .destination-content>p {
         margin: 20px 0 25px;
@@ -363,7 +410,7 @@ main{
     }
     .card-tittle {
         padding: 16px 0 16px;
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
     .card-p {
         font-size: .8rem;
@@ -376,13 +423,37 @@ main{
         margin: 20px 20px 0;
         flex-direction: column;
     }
+    /* deal section */
+    .deal{
+        margin: 0 20px;
+    }
+    .tourpackage-container {
+        margin: 10px 0;
+    }
+    .details {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+    .tour-details {
+        padding: 24px;
+        margin: 25px;
+    }
+    .t-p-l > .tour-details {
+        margin-left: 25px;
+    }
+    .tour-price{
+        font-size: .9rem;
+        margin: 12px 0 16px;
+    }
+    
 }
 
 
 
 @media screen and (min-width:570.1px) and (max-width:992px) {
     /* common style */
-    header, .popular-container, .destination , .whychoose {
+    header, .popular-container, .destination , .whychoose , .deal{
         padding-bottom: 35px;
     }
 
@@ -409,7 +480,7 @@ main{
     .banner-content>p {
         padding: 10px 0 16px;
     }
-    .banner-input input, #when, #types ,.btn{
+    .banner-input input, #when, #types , .btn{
         width: 100%;
     }
     /* popular section */
@@ -429,7 +500,7 @@ main{
         width: 100%;
     }
     /* destination section */
-    .destination-content , .whychoose-content{
+    .destination-content , .whychoose-content , .deal-content{
         width: 75%;
     }
     .destination-content>p {
