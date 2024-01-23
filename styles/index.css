@@ -277,7 +277,7 @@ main{
 
 /* responsive style */
 @media only screen and (max-width:570px) {
-    header, .popular-container ,.destination {
+    header, .popular-container , .destination, .whychoose {
         padding-bottom: 24px;
     }
     
@@ -350,13 +350,39 @@ main{
         top: -116px;
         font-size: 1.4rem;
     }
+    /* whochoose section */
+    .whychoose-card {
+        gap: 17px;
+        margin: 26px 20px 0;
+        flex-direction: column;
+    }
+    .card {
+        /* margin: 1px 20px; */
+        width: 100%;
+        height: 100%;
+    }
+    .card-tittle {
+        padding: 16px 0 16px;
+        font-size: 1.1em;
+    }
+    .card-p {
+        font-size: .8rem;
+        line-height: 23px;
+    }
+    .card img{
+        width: 22%;
+    }
+    .whychoose-card2 {
+        margin: 20px 20px 0;
+        flex-direction: column;
+    }
 }
 
 
 
 @media screen and (min-width:570.1px) and (max-width:992px) {
     /* common style */
-    header, .popular-container, .destination {
+    header, .popular-container, .destination , .whychoose {
         padding-bottom: 35px;
     }
 
@@ -415,12 +441,39 @@ main{
         padding: 0 20px;
     }
     .image-tittle img{
-        height: 210px;
+        height: 263px;
         width: 100%;
     }
     .image-tittle h3{
         top: -165px;
         font-size: 1.4rem;
+    }
+
+    /* whochoose section */
+    .whychoose-card {
+        gap: 17px;
+        margin: 26px 20px 0;
+        flex-direction: column;
+    }
+    .card {
+        /* margin: 1px 20px; */
+        width: 100%;
+        height: 100%;
+    }
+    .card-tittle {
+        padding: 16px 0 16px;
+        font-size: 1.1em;
+    }
+    .card-p {
+        font-size: 1rem;
+        line-height: 23px;
+    }
+    .card img{
+        width: 8%;
+    }
+    .whychoose-card2 {
+        margin: 20px 20px 0;
+        flex-direction: column;
     }
     
 }
