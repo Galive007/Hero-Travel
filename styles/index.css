@@ -203,9 +203,7 @@ main{
     padding: 18px 0 25px;
 }
 /* destination section */
-.destination{
-    /* border: 1px solid red; */
-}
+
 .destination-content, .whychoose-content , .deal-content{
     /* border: 1px solid darkmagenta; */
     width: 55.3%;
@@ -234,9 +232,7 @@ main{
     image-resolution: 100%;
 }
 /* whychoose section */
-.whychoose{
-    /* border: 1px solid green; */
-}
+
 .whychoose-card{
     display: flex;
     gap: 26px;
@@ -279,9 +275,7 @@ main{
 }
 
 /* deal section */
-.deal{
-    /* border: 1px solid gold; */
-}
+
 .tourpackage-container{
     margin: 48px 0 0;
 }
@@ -455,7 +449,7 @@ footer{
     /* border: 1px solid red; */
 }
 .footer-logo{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     justify-content: center;
     margin: 0 auto;
     display: flex;
@@ -481,9 +475,9 @@ footer{
 .footer-social{
     margin-bottom: 50px;
 }
-.hr{
+.footer-hr{
     margin-bottom: 50px;
-    background: rgba(19, 19, 24, 0.10);
+    color: #1313181A;
 }
 .copyrights{
     color: var(--heading-color);
@@ -680,9 +674,13 @@ footer{
     .footer-p {
         margin: 16px 0 16px;
     }
-    .footer-social, hr {
+    .footer-hr {
+        margin-bottom: 25px;
+    }
+    .footer-social{
         margin-bottom: 30px;
     }
+
 }
 
 
