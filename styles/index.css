@@ -16,9 +16,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
 }
 /* common section padding */
-header, .popular-container, .destination , .whychoose , .deal{
+header, .popular-container, .destination , .whychoose , .deal , .newsletter{
     padding-bottom: 100px;
 }
 /* common section width */
@@ -312,12 +316,130 @@ main{
     display: flex;
     gap: 24px;
 }
-
 .tour-price{
     color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: 800;
     margin: 16px 0 24px;
+}
+
+/* perfect place section */
+.perfect-place{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 50px;
+}
+.perfectplace-content{
+    padding-top: 20px;
+}
+.perfectplace-content ul{
+    padding-left: 25px;
+    
+}
+.perfectplace-content ul li{
+    /* padding: 10px 20px; */
+    padding-right: 66px;
+    padding-bottom: 16px;
+}
+.perfectplace-content>button{
+    margin-top: 10px;
+}
+.perfect-p{
+    color: var(--heading-color);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+}
+.perfectplace-content p{
+    padding: 18px 0 25px;
+}
+/* .perfectplace-image{
+    width: 610px;
+    height: 424px;
+} */
+.perfectplace-image h4{
+    width: 250px;
+    text-align: center;
+    position: relative;
+    left: 180px;
+    top: -230px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+/* newsletter section */
+.newsletter{
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+}
+.newsletter-content{
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+    background: #FFF;
+}
+.newsletter-content h3{
+    margin-bottom: 16px;
+    color: #131318;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+.newsletter-input{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.hr{
+    margin: 24px 0;
+    width: 393px;
+    border-bottom: 3px solid rgb(19 19 24 / 34%);
+}
+.newsletter-input input{
+    border: 0;
+    margin-bottom: 16px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgba(19, 19, 24, 0.05);
+}
+.newsletter-image{
+    width: 672px;
+    height: 422px;
+    border-radius: 16px;
+    background: url('../Images/Rectangle\ 8\ \(1\).png'), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.saveup{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+}
+.saveup p{
+    padding-top: 25px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.saveup h4{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 
@@ -394,6 +516,7 @@ main{
         height: 210px;
     }
     .image-tittle h3{
+        
         top: -116px;
         font-size: 1.4rem;
     }
@@ -446,7 +569,56 @@ main{
         font-size: .9rem;
         margin: 12px 0 16px;
     }
-    
+    /* perfect place section */
+    .perfect-place {
+        gap: 18px;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .perfectplace-content {
+        padding-top: 0px;
+    }
+    .perfectplace-image img{
+        width: 100%;
+    }
+    .perfectplace-image h4 {
+        width: auto;
+        left: 3px;
+        top: -154px;
+        font-size: 20px;
+    }
+    .perfectplace-content ul li {
+        padding-right: 0px;
+        padding-bottom: 16px;
+    }
+      /* newsletter section */
+    .newsletter{
+        margin: 0 20px;
+        width: fit-content;
+        flex-direction: column;
+    }
+    .hr {
+        margin: 18px 0;
+        width: 100%;
+    }
+    .newsletter-image{
+        width: auto;
+    }
+    .saveup{
+        top: 67%;
+        left: 25%;
+        width: 244px;
+        height: 105px;
+    }
+    .saveup p{
+        padding-top: 25px;
+        font-size: 0.9rem;
+    }
+    .saveup h4{
+        color: #FFF;
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
 }
 
 
