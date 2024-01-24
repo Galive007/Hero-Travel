@@ -1,6 +1,8 @@
 /* font-details */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 /* font-family: 'Mulish', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
 
 /* variables style */
 :root{
@@ -441,12 +443,60 @@ main{
     font-size: 32px;
     font-weight: 800;
 }
+footer{
+    padding: 110px;
+    height: 502px;
+    background: rgba(19, 19, 24, 0.05);
+}
+.footer-content{
+    max-width: 769px;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.footer-logo{
+    border: 1px solid blue;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    gap: 10px;
+}
+.footer-logo img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.footer-logo .logo-text{
+    color: var(--heading-color);
+    font-size: 2em;
+    font-weight: 800;
+}
+.footer-logo .logo-text .logo-color{
+    color: var(--primary-color);
+}
+.footer-p{
+    margin: 15px 0 33px;
+}
+.footer-social{
+    margin-bottom: 50px;
+}
+.hr{
+    margin-bottom: 50px;
+    background: rgba(19, 19, 24, 0.10);
+}
+.copyrights{
+    color: var(--heading-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
 
 
 
 /* responsive style */
 @media only screen and (max-width:570px) {
-    header, .popular-container , .destination, .whychoose , .deal{
+    header, .popular-container , .destination, .whychoose , .deal , .newsletter , footer{
         padding-bottom: 24px;
     }
     
@@ -500,7 +550,7 @@ main{
         width: 100%;
     }
     /* destination section */
-    .destination-content ,.whychoose-content , .deal-content{
+    .destination-content , .whychoose-content , .deal-content , .footer-logo{
         width: 80%;
     }
     .destination-content>p {
@@ -618,6 +668,20 @@ main{
         color: #FFF;
         font-size: 1.6rem;
         font-weight: 800;
+    }
+    /* footer section */
+    footer {
+        padding: 29px;
+        height: 320px;
+    }
+    /* .footer-logo {
+        width: 80%;
+    } */
+    .footer-p {
+        margin: 16px 0 16px;
+    }
+    .footer-social, hr {
+        margin-bottom: 30px;
     }
 }
 
